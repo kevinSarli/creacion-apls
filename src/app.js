@@ -28,8 +28,8 @@ app.use('/', indexRouter);
 app.use(moviesRoutes);
 app.use(genresRoutes);
 
-app.use("/apis/genres", require("./routes/api/genresRoutes"));
-app.use("/apis/movies", require("./routes/api/moviesRoutes"));
+app.use("/api/genres", require("./routes/api/genresRoutes"));
+app.use("/api/movies", require("./routes/api/moviesRoutes"));
 
 //Activando el servidor desde express
 app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
